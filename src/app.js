@@ -22,6 +22,7 @@ app.use("/api/register", require("./routes/api/register"));
 app.use("/api/auth", require("./routes/api/auth"));
 app.use("/api/refresh", require("./routes/api/refresh"));
 app.use("/api/logout", require("./routes/api/logout"));
+app.use("/api/laptops", require("./routes/api/laptops"));
 
 // A simple protected test route
 app.get("/api/test-protected", verifyJWT, (req, res) => {
